@@ -1,0 +1,50 @@
+<title>Lightning Creations Application Form for Membership</title>
+
+<center>
+    <h2> Lightning Creations Application Form for Membership </h1>
+    <p>
+        Thank you for taking an interest in joining LC!
+
+        Please take a moment to fill out this form, to provide us some basic information to gauge interest alongside basic details.
+
+        If you've been accepted as a member, we will try to contact you as quickly as we can.
+    <form action="/submit" method="post">
+        <!-- Discord -->
+        <label for="discord">What is your Discord username?</label>
+        <input type="text" id="discord" name="discord"><br><br>
+
+        <!-- e-mail-->
+        <label for="email">What is your e-mail?</label>
+        <p>LC may in the future migrate over to another platform. If this were to happen, we'd need to have your e-mail for transfering you with more bliss.</p>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Prefered Name -->
+        <label for="name">What is your prefered name?</label>
+        <p>Whatever you'd like to be called by others.</p>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Pronouns -->
+        <label for="pronouns">What is your prefered pronouns?</label>
+        <input type="text" id="pronouns" name="pronouns"><br><br>
+
+
+        <!-- Legal -->
+
+        <p>
+        Disclaimers
+        No, we aren't asking you to sign your life away. Far from it.
+
+        Any time put towards LC is to be assumed to be volunteer time for the time being. Lightning Creations is still growing, and we haven't finished a major project yet, nor do we currently have a source of income. If the option comes for us to be able to pay you for what you've done, we'll get back to you then.
+
+        Any contributions made to closed-source LC projects are owned by LC. This is mainly just to save us the legal nightmare that would arise from a Member working on an LC project and then leaving; we'd like to keep using your contributions and not have to rewrite it from scratch; we do enough of that already 🙃. If you would like to be able to copy your own code outside of LC, just let us know; we'll almost certainly okay it.
+
+        There will be a license for open source contributions as well, but that has not been written yet.
+    </p>
+
+        <label for="agreed">I agree to the above disclaimers</label>
+        <input type="checkbox" id="agreed" name="agreed" value="agreed">
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</center>
