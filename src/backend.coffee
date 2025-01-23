@@ -8,11 +8,12 @@ querystring = require 'querystring'
 # Configure Mock Code
 # TODO Load these variables from conf.json
 
-port = 8080
+port = 9060
 host = '127.0.0.1'
 
 formHtml = fs.readFileSync('html/form.html', 'utf8')
 notFoundHtml = fs.readFileSync('html/404.html', 'utf8')
+styleCss = fs.readFileSync('html/style.css', 'utf8')
 
 requestListener = (req, res) ->
     reqPath = req.url
@@ -22,6 +23,10 @@ requestListener = (req, res) ->
             res.statusCode = 200
             res.setHeader 'Content-Type', 'text/html'
             res.end formHtml
+        when '/assets/style.css'
+            res.statusCode = 200
+            res.setHeader 'Content-Type', 'text/css'
+            res.end styleCss
         when '/submit'
             if req.method is 'POST'
                 body = ''
