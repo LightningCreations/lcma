@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jersey 15", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+
+    background-image: linear-gradient(to bottom, #222, #333);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 100vh;
+
+}
+
+form {
+    width: 400px;
+    padding: 40px;
+    background-image: linear-gradient(to bottom, #444, #333);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+form div {
+    text-align: center;
+}
+
+.quest {
+    font-size: 26px
+}
+
+label,
+input, #next, #submit {
+    margin-bottom: 17px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    outline: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: blue;
+}
+
+label[for="agreed"] {
+    margin: 0;
+}
+
+#next, #submit {
+background-color: blue;
+color: white;
+padding: 12px 24px;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+float: right;
+}
+
+#back {
+background-color: blue;
+color: white;
+padding: 12px 24px;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+float: left;
+}
+
+input:focus, #submit, #next, #back {
+    border-color: blue;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: auto;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #272727;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

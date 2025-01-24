@@ -9,7 +9,7 @@ html = """
 <head>
   <meta charset="UTF-8">
   <script src="/assets/client.js"></script>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/form.css">
 </head>
 <body>
 <form action="/submit" method="post">
@@ -46,7 +46,7 @@ Object.keys(jsonData).forEach (key) ->
 
 html += """
 <div class="checkbox-container">
-<input type="checkbox" id="NDg4MDc2NjQ4NWRlNzgyMWRiMTM5NDAzOTVhOTEzYzg=" name="agree" required="">
+<input type="checkbox" id="NDg4MDc2NjQ4NWRlNzgyMWRiMTM5NDAzOTVhOTEzYzg=" name="agreedToDisclaimers" required="">
 <label for="NDg4MDc2NjQ4NWRlNzgyMWRiMTM5NDAzOTVhOTEzYzg=">I agree to the above disclaimers</label>
 </div>
 <input id="submit" type="submit" value="Submit">

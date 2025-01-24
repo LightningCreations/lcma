@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 * {
-margin: 0;
-padding: 0;
-font-family: "Jersey 15", serif;
-font-weight: 800;
-font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-family: "Jersey 15", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.results {
+    padding: 50px;
+    text-align: center;
 }
 
 body {
-
-  background-image: linear-gradient(to bottom, #222, #333);
+    background-image: linear-gradient(to bottom, #222, #333);
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    height: 100vh;
-
 }
 
 form {
@@ -65,23 +65,23 @@ label[for="agreed"] {
 }
 
 #next, #submit {
-    background-color: blue;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    float: right;
+background-color: blue;
+color: white;
+padding: 12px 24px;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+float: right;
 }
 
 #back {
-    background-color: blue;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    float: left;
+background-color: blue;
+color: white;
+padding: 12px 24px;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+float: left;
 }
 
 input:focus, #submit, #next, #back {
@@ -94,11 +94,12 @@ input:focus, #submit, #next, #back {
     }
 }
 
+
 footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100;
     background-color: #272727;
     color: white;
     padding: 10px;
