@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px;
+    height: 100vh;
 
 }
 
@@ -31,8 +32,12 @@ form div {
     text-align: center;
 }
 
+.quest {
+    font-size: 26px
+}
+
 label,
-input {
+input, #next, #submit {
     margin-bottom: 17px;
 }
 
@@ -59,7 +64,7 @@ label[for="agreed"] {
     margin: 0;
 }
 
-input[type="submit"] {
+#next, #submit {
     background-color: blue;
     color: white;
     padding: 12px 24px;
@@ -69,7 +74,17 @@ input[type="submit"] {
     float: right;
 }
 
-input:focus {
+#back {
+    background-color: blue;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+
+input:focus, #submit, #next, #back {
     border-color: blue;
 }
 

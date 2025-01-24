@@ -1,0 +1,170 @@
+{
+  "questions": [
+    {
+      "question": "What's your Discord Username?",
+      "type": "text"
+    },
+    {
+      "question": "What's your e-mail?",
+      "type": "email"
+    },
+    {
+      "question": "What is your preferred name?",
+      "type": "text"
+    },
+    {
+      "question": "What is your preferred pronouns?",
+      "type": "text"
+    },
+    {
+      "question": "How are you at coming up with ideas?",
+      "type": "radio",
+      "answers": [
+        "I get a unique idea almost everyday.",
+        "I come up with interesting ideas every now and then.",
+        "I am willing to learn idea development.",
+        "I do not expect to have an original thought."
+      ]
+    },
+    {
+      "question": "Do you have any further comments on idea-ing?",
+      "type": "text"
+    },
+    {
+      "question": "What's your 2D visual art skill level?",
+      "type": "radio",
+      "answers": [
+        "I may as well be Picasso, Rambrandt, or Downing. I'm chilling.",
+        "I've made some art.",
+        "I'm willing to learn how to draw.",
+        "I can't tell a cat from a dog."
+      ]
+    },
+    {
+      "question": "Specifically, how good are you at digital art?",
+      "type": "radio",
+      "answers": [
+        "I am a Deviantart diva, a Newgrounds numen, a Pinterest prince.",
+        "I can do some digital art things.",
+        "I'm willing to learn the ways of the Krita.",
+        "I have been permanently gimped out of using GIMP."
+      ]
+    },
+    {
+      "question": "What about 3D modeling/rendering",
+      "type": "radio",
+      "answers": [
+        "I belong on the Blender Guru channel. No, I belong on the Corridor Crew.",
+        "I've made a scene, or an interesting object.",
+        "I'm on a journey of discovery, and I will take assistance.",
+        "My world exists on the plane. The flat plane."
+      ]
+    },
+    {
+      "question": "On a related note, how confident are you in animation?",
+      "type": "radio",
+      "answers": [
+        "I'm my generation's Walt Disney. I'm going to change the animation world.",
+        "I've animated a short scene before.",
+        "I'd love to make animation, but I don't know how yet, or I'm overwhelmed.",
+        "I'm just overwhelmed. Nope."
+      ]
+    },
+    {
+      "question": "Do you have any further comments on visual arts?",
+      "type": "text"
+    },
+    {
+      "question": "How would you rate your musical ability?",
+      "type": "radio",
+      "answers": [
+        "I'm John Williams, and I'm also first chair in his orchestra, as well as his mixing engineer.",
+        "I've done music-related things in my time.",
+        "I'm waiting for the right director.",
+        "I am literally tonedeaf."
+      ]
+    },
+    {
+      "question": "Can you write music?",
+      "type": "radio",
+      "answers": [
+        "Like I said, I'm John Williams.",
+        "I've made a song before.",
+        "I'd like someone to Stand By Me while I learn.",
+        "I couldn't tell you what notes sound good together if you played them for me."
+      ]
+    },
+    {
+      "question": "What about performing music?",
+      "type": "radio",
+      "answers": [
+        "I'm John Phillip Sousa himself. That's right, I invented low brass. Deal with it.",
+        "I can play at least one intstrument decently, or I used to before high school ended.",
+        "I'd love to learn, just give me an instrument and a teacher.",
+        "I wouldn't know what I note I was playing if I was playing it."
+      ]
+    },
+    {
+      "question": "How about electronic music production?",
+      "type": "radio",
+      "answers": [
+        "Virtual Riot, I'm coming for you. Or whoever the top guy is nowadays.",
+        "I've used music making software before, I can do stuff with it.",
+        "I would be willing to have someone guide me in the mystical ways.",
+        "The ways are mystical alright."
+      ]
+    },
+    {
+      "question": "Do you have any further comments on music?",
+      "type": "text"
+    },
+    {
+      "question": "Would you consider yourself a writer?",
+      "type": "radio",
+      "answers": [
+        "I have gone beyond even Tolkien. Fear my power.",
+        "I've done creative writing before, and I'd like to do more.",
+        "I'd love to learn how to get better.",
+        "Option 4."
+      ]
+    },
+    {
+      "question": "Do you have any further comments on writing?",
+      "type": "text"
+    },
+    {
+      "question": "Can you program?",
+      "type": "radio",
+      "answers": [
+        "I'm a tech billionaire, with the exception of the billionaire part.",
+        "I've made some programs before. Who cares if they're finished..",
+        "I want to learn the lore. Give me the lore.",
+        "It's all Greek to me."
+      ]
+    },
+    {
+      "question": "Do you have any further comments on programming?",
+      "type": "text"
+    },
+    {
+      "question": "Do you consider yourself good at management?",
+      "type": "radio",
+      "answers": [
+        "I can figure out what everyone is good at and put them in exactly the right place for everyone to succeed.",
+        "I can tell people what to do, and I can listen too.",
+        "I can manage if given a chance.",
+        "I am a push-over. No, literally, I don't have the mental strength to stay standing when tapped."
+      ]
+    },
+    {
+      "question": "Do you consider yourself good at vision-casting?",
+      "type": "radio",
+      "answers": [
+        "I literally have a time machine. I know exactly what will happen and where to go.",
+        "I have great ideas but sometimes need help finding them.",
+        "I haven’t tried envisioning stuff much but I’d love to try!",
+        "I have never shown any vision since my eyes got stolen seven years ago."
+      ]
+    }
+  ]
+}
