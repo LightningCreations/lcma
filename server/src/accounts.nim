@@ -1,10 +1,10 @@
 import norm/sqlite
-import mummy, mummy/routers
-import std/[os, json, strutils]
+import mummy
+import std/[json, strutils, strformat]
 
 import logging
 import config
-import models
+import database
 
 
 let conf = getConfig()
@@ -36,7 +36,7 @@ proc createSession*(dbConn: DbConn, account: Account): string =
   return token
 
 proc registerHandler*(request: Request) =
-  log(DEBUG, @["/api/v1/account/register", $request.httpMethod].join(" "))
+  log(DEBUG, fmt"/api/v1/account/register {request.httpMethod}")
 
   try:
     let body : JsonNode = parseJson(request.body)
@@ -49,10 +49,10 @@ proc registerHandler*(request: Request) =
     if not body.contains("password"):
       request.respond(400, headers, $(%*{"Invalid Body": "Requires password"}))
 
-    let dbConn = models.getDb()
+    let dbConn = database.getDb()
 
     if not hasAccountByEmail(dbConn, body["email"].getStr()):
-      log(DEBUG, @["Register account", $body["email"].getStr()].join(""))
+      log(DEBUG, fmt"""Register account {body["email"]}""")
 
       var account = [newAccount(body["email"].getStr(), body["password"].getStr())]
       dbConn.insert(account)

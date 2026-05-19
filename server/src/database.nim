@@ -1,7 +1,6 @@
 import norm/[model, sqlite]
-import mummy, mummy/routers
 import logging
-import strutils
+import std/strformat
 
 var db {.threadvar.} : DbConn
 
@@ -28,7 +27,7 @@ proc getDb*(): DbConn =
       db.exec(sql"PRAGMA busy_timeout = 5000;")
       db.exec(sql"PRAGMA journal_mode = WAL;")
     except CatchableError as e:
-      log(ERROR, @["Could not open/recover database: ", $e.msg].join(""))
+      log(ERROR, fmt"Could not open/recover database: {e.msg}")
   return db
 
 type

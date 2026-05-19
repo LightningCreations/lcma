@@ -1,10 +1,9 @@
 import mummy, mummy/routers
-import std/[os, json, strutils]
+import std/[json, strformat]
 
-import norm/sqlite
 import logging
 import config
-import models
+import database
 
 import accounts
 
@@ -23,6 +22,6 @@ let conf = getConfig()
 
 startupDb()
 
-log(INFO, @["Serving on http://localhost:", $conf.port].join(""))
+log(INFO, fmt"Serving on http://{conf.domain}:{$conf.port}")
 
 server.serve(Port(conf.port))

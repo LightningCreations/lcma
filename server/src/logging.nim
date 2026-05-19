@@ -1,4 +1,4 @@
-import std/locks
+import std/[locks, strutils, strformat]
 
 type
   LogLevel* = enum
@@ -15,9 +15,9 @@ initLock(logLock)
 template log*(level: LogLevel, msg: string) =
   const minLevel : LogLevel = parseEnum[LogLevel](logLevel)
   
-  when level >= minLevel:
+  when ord(level) >= ord(minLevel):
     acquire(logLock)
     try:
-      echo @["[", $level, "]", " ", msg].join("")
+      echo "[" & $level & "] " & msg
     finally:
       release(logLock)
