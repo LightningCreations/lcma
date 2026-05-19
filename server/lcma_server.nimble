@@ -12,3 +12,6 @@ bin           = @["server"]
 
 requires "nim >= 2.2.10"
 requires "mummy >= 0.4.8"
+requires "norm >= 2.8.0"
+
+switch("path", "$nimbleDir/pkgs2")

@@ -2,13 +2,13 @@ import std/[os, json, strutils]
 import logging
 
 type
-  Config = object
-    version: int
-    port: int
-    domain: string
+  Config* = object
+    version*: int
+    port*: int
+    domain*: string
 
 # Returns a copy of the config, will generate a config is not found on the filesystem
-proc getConfig(): Config =
+proc getConfig*(): Config =
   log(DEBUG, "Loading Config")
   
   let dirPath = getHomeDir() / ".config" / "lcma"
